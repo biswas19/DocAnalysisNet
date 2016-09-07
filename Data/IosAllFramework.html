@@ -1,0 +1,209 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iOS Frameworks</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40007898">
+    <meta id="document-version" name="document-version" content="10.1.1">
+    <meta id="build" name="build" content="230aa8319d02cf9343563da0e5928a4c" />
+    <meta id="chapterId" name="chapterId" content="TP40007898-CH6">
+    <meta id="date" name="date" content="2014-09-17">
+    <meta id="description" name="description" content="Introduces iOS and its technologies.">
+    <meta id="book-title" name="book-title" content="iOS Technology Overview">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="iOS Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/ios">
+    <meta id="reflib" name="reflib" content="iOS Developer Library">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/General}">
+
+
+    <meta id="copyright" name="copyright" content="Copyright 2016 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="iOS Technology Overview: iOS Frameworks">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/1197">
+    <link id="book-index-page" rel="Start" title="iOS Technology Overview" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../RevisionHistory.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="../CoreOSLayer/CoreOSLayer.html">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1197/CSS/screen.css">
+
+    <!-- xcode_css -->
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1197/CSS/feedback.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+    <a name="//apple_ref/doc/uid/TP40007898-CH6" title="iOS Frameworks"></a>
+    <div id="_omniture_top">
+        <!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+        <script type="text/javascript">
+            /* RSID: */
+            var s_account = "appleglobal,appleusdeveloper,dappdeveloperlib"
+        </script>
+
+        <script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+        <script type="text/javascript">
+            s.pageName = AC.Tracking.pageName();
+            s.channel = "www.us.developer"
+
+            /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+            var s_code = s.t(); if (s_code) document.write(s_code)</script>
+        <!-- End SiteCatalyst code version: H.8. -->
+    </div>
+
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode phone">
+            <a id="ssi_LibraryTitle" href='../../../../../navigation/'>iOS Developer Library</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='../../../../../search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search iOS Developer Library</label>
+
+
+            <input type='hidden' id='ssi_Platform' name='platform' value='iOS'>
+
+
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>iOS Technology Overview</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../RevisionHistory.html'>Next</a><a class='previousLink' rel='prev' href='../CoreOSLayer/CoreOSLayer.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+
+        <a name="//apple_ref/doc/uid/TP40007898-CH6-SW3" title="iOS Frameworks"></a><h1 id="pageTitle">iOS Frameworks</h1><p>This appendix contains information about the frameworks of iOS. These frameworks provide the interfaces you need to write software for the platform. Where applicable, the tables in this appendix list any key prefixes used by the classes, methods, functions, types, or constants of the framework. Avoid using any of the specified prefixes in your own code.</p><section><a name="//apple_ref/doc/uid/TP40007898-CH6-SW5" title="Device Frameworks"></a><h2 class="jump">Device Frameworks</h2><p><span class="content_text">Table A-1</span> describes the frameworks available in iOS-based devices. You can find these frameworks in the <em>&lt;Xcode.app&gt;</em><code>Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/</code><em>&lt;iOS_SDK&gt;</em><code>/System/Library/Frameworks</code> directory, where <em>&lt;Xcode.app&gt;</em> is the path to your Xcode app and <em>&lt;iOS_SDK&gt;</em> is the specific SDK version you are targeting. The "First available” column lists the iOS version in which the framework first appeared. </p><a name="//apple_ref/doc/uid/TP40007898-CH6-SW2" title="Table A-1Device frameworks"></a><div class="tableholder"><table class="graybox" border="0" cellspacing="0" cellpadding="5"><caption class="tablecaption"><strong class="caption_number">Table A-1</strong>&nbsp;&nbsp;Device frameworks</caption><tr><th scope="col" class="TableHeading_TableRow_TableCell"><p>Name</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>First available</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>Prefixes</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>Description</p></th></tr><tr><td scope="row"><p><code>Accelerate.framework</code></p></td><td><p>4.0</p></td><td><p><code>cblas</code>, <code>vDSP</code></p></td><td><p>Contains accelerated math and DSP functions. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW23" data-renderer-version="1">Accelerate Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>Accounts.framework</code></p></td><td><p>5.0</p></td><td><p><code>AC</code></p></td><td><p>Contains interfaces for managing access to a user’s system accounts. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW24" data-renderer-version="1">Accounts Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>AddressBook.framework</code></p></td><td><p>2.0</p></td><td><p><code>AB</code></p></td><td><p>Contains functions for accessing the user’s contacts database directly. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW13" data-renderer-version="1">Address Book Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>AddressBookUI.framework</code></p></td><td><p>2.0</p></td><td><p><code>AB</code></p></td><td><p>Contains classes for displaying the system-defined people picker and editor interfaces. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW21" data-renderer-version="1">Address Book UI Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>AdSupport.framework</code></p></td><td><p>6.0</p></td><td><p><code>AS</code></p></td><td><p>Contains a class for gathering analytics. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW31" data-renderer-version="1">Ad Support Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>AssetsLibrary.framework</code></p></td><td><p>4.0</p></td><td><p><code>AL</code></p></td><td><p>Contains classes for accessing the user’s photos and videos. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW14" data-renderer-version="1">Assets Library Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>AudioToolbox.framework</code></p></td><td><p>2.0</p></td><td><p><code>AU</code>, <code>Audio</code></p></td><td><p>Contains the interfaces for handling audio stream data and for playing and recording audio. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW8" data-renderer-version="1">Core Audio</a></span>. </p></td></tr><tr><td scope="row"><p><code>AudioUnit.framework</code></p></td><td><p>2.0</p></td><td><p><code>AU</code>, <code>Audio</code></p></td><td><p>Contains the interfaces for loading and using audio units. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW8" data-renderer-version="1">Core Audio</a></span>. </p></td></tr><tr><td scope="row"><p><code>AVFoundation.framework</code></p></td><td><p>2.2</p></td><td><p><code>AV</code></p></td><td><p>Contains Objective-C interfaces for playing and recording audio and video. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW7" data-renderer-version="1">AV Foundation Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>AVKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>AV</code></p></td><td><p>Contains Objective-C interfaces for playing and recording audio and video. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW27" data-renderer-version="1">AVKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CFNetwork.framework</code></p></td><td><p>2.0</p></td><td><p><code>CF</code></p></td><td><p>Contains interfaces for accessing the network via Wi-Fi and cellular radios. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW14" data-renderer-version="1">CFNetwork Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CloudKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>CK</code></p></td><td><p>Contains Objective-C interfaces for fetching and saving iCloud data. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW36" data-renderer-version="1">CloudKit</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreAudio.framework</code></p></td><td><p>2.0</p></td><td><p><code>Audio</code></p></td><td><p>Provides the data types used throughout Core Audio. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW8" data-renderer-version="1">Core Audio</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreAudioKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>CA</code></p></td><td><p>Provides the data types used throughout Core Audio. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW31" data-renderer-version="1">CoreAudioKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreBluetooth.framework</code></p></td><td><p>5.0</p></td><td><p><code>CB</code></p></td><td><p>Provides access to low-power Bluetooth hardware. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW6" data-renderer-version="1">Core Bluetooth Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreData.framework</code></p></td><td><p>3.0</p></td><td><p><code>NS</code></p></td><td><p>Contains interfaces for managing your application’s data model. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW16" data-renderer-version="1">Core Data Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreFoundation.framework</code></p></td><td><p>2.0</p></td><td><p><code>CF</code></p></td><td><p>Provides fundamental software services, including abstractions for common data types, string utilities, collection utilities, resource management, and preferences. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW1" data-renderer-version="1">Core Foundation Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreGraphics.framework</code></p></td><td><p>2.0</p></td><td><p><code>CG</code></p></td><td><p>Contains the interfaces for Quartz 2D. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW9" data-renderer-version="1">Core Graphics Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreImage.framework</code></p></td><td><p>5.0</p></td><td><p><code>CI</code></p></td><td><p>Contains interfaces for manipulating video and still images. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW20" data-renderer-version="1">Core Image Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreLocation.framework</code></p></td><td><p>2.0</p></td><td><p><code>CL</code></p></td><td><p>Contains the interfaces for determining a user’s location. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW3" data-renderer-version="1">Core Location Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreMedia.framework</code></p></td><td><p>4.0</p></td><td><p><code>CM</code></p></td><td><p>Contains low-level routines for manipulating audio and video. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW17" data-renderer-version="1">Core Media Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreMIDI.framework</code></p></td><td><p>4.2</p></td><td><p><code>MIDI</code></p></td><td><p>Contains low-level routines for handling MIDI data. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW8" data-renderer-version="1">Core Audio</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreMotion.framework</code></p></td><td><p>4.0</p></td><td><p><code>CM</code></p></td><td><p>Contains interfaces for accessing accelerometer and gyro data. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27" data-renderer-version="1">Core Motion Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreTelephony.framework</code></p></td><td><p>4.0</p></td><td><p><code>CT</code></p></td><td><p>Contains routines for accessing telephony-related information. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW18" data-renderer-version="1">Core Telephony Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreText.framework</code></p></td><td><p>3.2</p></td><td><p><code>CT</code></p></td><td><p>Contains a text layout and rendering engine. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW10" data-renderer-version="1">Core Text Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>CoreVideo.framework</code></p></td><td><p>4.0</p></td><td><p><code>CV</code></p></td><td><p>Contains low-level routines for managing memory for video frames.</p></td></tr><tr><td scope="row"><p><code>EventKit.framework</code></p></td><td><p>4.0</p></td><td><p><code>EK</code></p></td><td><p>Contains interfaces for accessing a user’s calendar event data. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW2" data-renderer-version="1">EventKit Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>EventKitUI.framework</code></p></td><td><p>4.0</p></td><td><p><code>EK</code></p></td><td><p>Contains classes for displaying the standard system calendar interfaces. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW3" data-renderer-version="1">EventKit UI Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>ExternalAccessory.framework</code></p></td><td><p>3.0</p></td><td><p><code>EA</code></p></td><td><p>Contains interfaces for communicating with attached hardware accessories. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW2" data-renderer-version="1">External Accessory Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Foundation.framework</code></p></td><td><p>2.0</p></td><td><p><code>NS</code></p></td><td><p>Contains interfaces for managing strings, collections, and other low-level data types. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW19" data-renderer-version="1">Foundation Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>GameController.framework</code></p></td><td><p>7.0</p></td><td><p><code>GC</code></p></td><td><p>Contains interfaces for communicating with game-related hardware. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW26" data-renderer-version="1">Game Controller Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>GameKit.framework</code></p></td><td><p>3.0</p></td><td><p><code>GK</code></p></td><td><p>Contains interfaces for managing peer-to-peer connectivity. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW2" data-renderer-version="1">GameKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>GLKit.framework</code></p></td><td><p>5.0</p></td><td><p><code>GLK</code></p></td><td><p>Contains Objective-C utility classes for building complex OpenGL ES applications. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW21" data-renderer-version="1">GLKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>GSS.framework</code></p></td><td><p>5.0</p></td><td><p><code>gss</code></p></td><td><p>Provides a standard set of security-related services. </p></td></tr><tr><td scope="row"><p><code>HealthKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>HK</code></p></td><td><p>Provides a way to store health-related information for the user. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW37" data-renderer-version="1">HealthKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>HomeKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>HM</code></p></td><td><p>Provides services for communicating with integrated household devices. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW38" data-renderer-version="1">HomeKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>iAd.framework</code></p></td><td><p>4.0</p></td><td><p><code>AD</code></p></td><td><p>Contains classes for displaying advertisements in your application. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW13" data-renderer-version="1">iAd Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>ImageIO.framework</code></p></td><td><p>4.0</p></td><td><p><code>CG</code></p></td><td><p>Contains classes for reading and writing image data. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW16" data-renderer-version="1">Image I/O Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>IOKit.framework</code></p></td><td><p>2.0</p></td><td><p>N/A</p></td><td><p>Contains interfaces used by the device. Do not use this framework directly. </p></td></tr><tr><td scope="row"><p><code>JavaScriptCore.framework</code></p></td><td><p>7.0</p></td><td><p><code>JS</code></p></td><td><p>Contains Objective-C wrappers for evaluating JavaScript code and parsing JSON. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW35" data-renderer-version="1">JavaScript Core Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>LocalAuthentication.framework</code></p></td><td><p>8.0</p></td><td><p><code>LA</code></p></td><td><p>Provides support for authenticating the user via Touch ID. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW7" data-renderer-version="1">Local Authentication Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>MapKit.framework</code></p></td><td><p>3.0</p></td><td><p><code>MK</code></p></td><td><p>Contains classes for embedding a map interface into your application and for reverse-geocoding coordinates. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW28" data-renderer-version="1">MapKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>MediaAccessibility.framework</code></p></td><td><p>7.0</p></td><td><p><code>MA</code></p></td><td><p>Manages the presentation of closed-caption content in media files. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW25" data-renderer-version="1">Media Accessibility Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>MediaPlayer.framework</code></p></td><td><p>2.0</p></td><td><p><code>MP</code></p></td><td><p>Contains interfaces for playing full-screen video. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW12" data-renderer-version="1">Media Player Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>MediaToolbox.framework</code></p></td><td><p>6.0</p></td><td><p><code>MT</code></p></td><td><p>Contains interfaces for playing audio content. </p></td></tr><tr><td scope="row"><p><code>MessageUI.framework</code></p></td><td><p>3.0</p></td><td><p><code>MF</code></p></td><td><p>Contains interfaces for composing and queuing email messages. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW27" data-renderer-version="1">Message UI Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Metal.framework</code></p></td><td><p>8.0</p></td><td><p><code>MTL</code></p></td><td><p>Provides a low-overhead graphics rendering engine for apps. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW28" data-renderer-version="1">Metal Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>MobileCoreServices.framework</code></p></td><td><p>3.0</p></td><td><p><code>UT</code></p></td><td><p>Defines the uniform type identifiers (UTIs) supported by the system. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW20" data-renderer-version="1">Mobile Core Services Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>MultipeerConnectivity.framework</code></p></td><td><p>7.0</p></td><td><p><code>MC</code></p></td><td><p>Provides interfaces for implementing peer-to-peer networking between devices. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW33" data-renderer-version="1">Multipeer Connectivity Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>NetworkExtension.framework</code></p></td><td><p>8.0</p></td><td><p><code>NE</code></p></td><td><p>Provides interfaces for configuring and controlling VPN support. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW8" data-renderer-version="1">Network Extension Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>NewsstandKit.framework</code></p></td><td><p>5.0</p></td><td><p><code>NK</code></p></td><td><p>Provides interfaces for downloading magazine and newspaper content in the background. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW25" data-renderer-version="1">NewsstandKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>NotificationCenter.framework</code></p></td><td><p>8.0</p></td><td><p><code>NK</code></p></td><td><p>Provides interfaces for implementing notification center widgets. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW15" data-renderer-version="1">Notification Center Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>OpenAL.framework</code></p></td><td><p>2.0</p></td><td><p><code>AL</code></p></td><td><p>Contains the interfaces for OpenAL, a cross-platform positional audio library. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW13" data-renderer-version="1">OpenAL Framework</a></span>.</p></td></tr><tr><td scope="row"><p><code>OpenGLES.framework</code></p></td><td><p>2.0</p></td><td><p><code>EAGL</code>, <code>GL</code></p></td><td><p>Contains the interfaces for OpenGL ES, which is an embedded version of the OpenGL cross-platform 2D and 3D graphics rendering library. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW15" data-renderer-version="1">OpenGL ES Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>PassKit.framework</code></p></td><td><p>6.0</p></td><td><p><code>PK</code></p></td><td><p>Contains interfaces for creating digital passes to replace things like tickets, boarding passes, member cards, and more. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW28" data-renderer-version="1">PassKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Photos.framework</code></p></td><td><p>8.0</p></td><td><p><code>PH</code></p></td><td><p>Contains interfaces for accessing and manipulating photo and videos. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW29" data-renderer-version="1">Photos Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>PhotosUI.framework</code></p></td><td><p>8.0</p></td><td><p><code>PH</code></p></td><td><p>Contains interfaces for creating app extensions that manipulate photo and video assets. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW30" data-renderer-version="1">Photos UI Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>PushKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>PK</code></p></td><td><p>Provides a way for VoIP apps to register with a device. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW17" data-renderer-version="1">PushKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>QuartzCore.framework</code></p></td><td><p>2.0</p></td><td><p><code>CA</code></p></td><td><p>Contains the Core Animation interfaces. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW17" data-renderer-version="1">Quartz Core Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>QuickLook.framework</code></p></td><td><p>4.0</p></td><td><p><code>QL</code></p></td><td><p>Contains interfaces for previewing files. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW15" data-renderer-version="1">Quick Look Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>SafariServices.framework</code></p></td><td><p>7.0</p></td><td><p><code>SS</code></p></td><td><p>Supports the creation of reading list items in Safari. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW34" data-renderer-version="1">Safari Services Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>SceneKit.framework</code></p></td><td><p>8.0</p></td><td><p><code>SCN</code></p></td><td><p>Provides interfaces for creating 3D graphics. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW32" data-renderer-version="1">SceneKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Security.framework</code></p></td><td><p>2.0</p></td><td><p><code>CSSM</code>, <code>Sec</code></p></td><td><p>Contains interfaces for managing certificates, public and private keys, and trust policies. See <span class="content_text"><a href="../CoreOSLayer/CoreOSLayer.html#//apple_ref/doc/uid/TP40007898-CH11-SW3" data-renderer-version="1">Security Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Social.framework</code></p></td><td><p>6.0</p></td><td><p><code>SL</code></p></td><td><p>Contains interfaces for interacting with social media accounts. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW26" data-renderer-version="1">Social Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>SpriteKit.framework</code></p></td><td><p>7.0</p></td><td><p><code>SK</code></p></td><td><p>Facilitates the creation of sprite-based animations and rendering. See <span class="content_text"><a href="../MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40007898-CH9-SW22" data-renderer-version="1">SpriteKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>StoreKit.framework</code></p></td><td><p>3.0</p></td><td><p><code>SK</code></p></td><td><p>Contains interfaces for handling the financial transactions associated with in-app purchases. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW4" data-renderer-version="1">StoreKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>SystemConfiguration.framework</code></p></td><td><p>2.0</p></td><td><p><code>SC</code></p></td><td><p>Contains interfaces for determining the network configuration of a device. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW21" data-renderer-version="1">System Configuration Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>Twitter.framework</code></p></td><td><p>5.0</p></td><td><p><code>TW</code></p></td><td><p>Contains interfaces for sending tweets via the Twitter service. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW19" data-renderer-version="1">Twitter Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>UIKit.framework</code></p></td><td><p>2.0</p></td><td><p><code>UI</code></p></td><td><p>Contains classes and methods for the iOS application user interface layer. See <span class="content_text"><a href="../iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW18" data-renderer-version="1">UIKit Framework</a></span>. </p></td></tr><tr><td scope="row"><p><code>VideoToolbox.framework</code></p></td><td><p>6.0</p></td><td><p>VT</p></td><td><p>Contains low-level routines for compressing and decompressing video frames.</p></td></tr><tr><td scope="row"><p><code>WebKit.framework</code></p></td><td><p>8.0</p></td><td><p>WK</p></td><td><p>Provides support for integrating web content into your apps. See <span class="content_text"><a href="../CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW39" data-renderer-version="1">WebKit Framework</a></span>.</p></td></tr></table></div></section><section><a name="//apple_ref/doc/uid/TP40007898-CH6-SW4" title="Simulator Frameworks"></a><h2 class="jump">Simulator Frameworks</h2><p>Although you should always target the device frameworks when writing your code, you might need to compile your code specially for Simulator during testing. The frameworks available on the device and in Simulator are mostly identical, but there are a handful of differences. For example, Simulator uses several OS X frameworks as part of its own implementation. In addition, the exact interfaces available for a device framework and a Simulator framework may differ slightly because of system limitations.  </p><p>For a list of the specific behavior differences between devices and iOS Simulator, see <em><a href="../../../../IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012848" data-renderer-version="1" target="_self">Simulator User Guide</a></em>.</p></section><section><a name="//apple_ref/doc/uid/TP40007898-CH6-SW6" title="System Libraries"></a><h2 class="jump">System Libraries</h2><p>Note that some specialty libraries at the Core OS and Core Services level are not packaged as frameworks. Instead, iOS includes many dynamic libraries in the <code>/usr/lib</code> directory of the system. Dynamic shared libraries are identified by their <code>.dylib</code> extension. Header files for the libraries are located in the <code>/usr/include</code> directory. </p><p>Each version of the iOS SDK includes a local copy of the dynamic shared libraries that are installed with the system. These copies are installed on your development system so that you can link to them from your Xcode projects. To see the list of libraries for a particular version of iOS, look in <em>&lt;Xcode.app&gt;</em><code>/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/</code><em>&lt;iOS_SDK&gt;</em><code>/usr/lib</code>, where <em>&lt;Xcode.app&gt;</em> is the path to your Xcode app and <em>&lt;iOS_SDK&gt;</em> is the specific SDK version you are targeting. For example, the shared libraries for the iOS 8.0 SDK would be located in the <code>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/usr/lib</code> directory, with the corresponding headers in <code>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/usr/include</code>.</p><p>iOS uses symbolic links to point to the current version of most libraries. When linking to a dynamic shared library, use the symbolic link instead of a link to a specific version of the library. Library versions may change in future versions of iOS; if your software is linked to a specific version, that version might not always be available on the user’s system.</p></section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../RevisionHistory.html'>Next</a><a class='previousLink' rel='prev' href='../CoreOSLayer/CoreOSLayer.html'>Previous</a>
+        </div><br />
+        <div class="copyright"><br /><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2014 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2014-09-17</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+        <div id="preload"></div>
+    </div>
+    <div id="leave_feedback" class="button" role="button" tabindex="0">Feedback</div>
+    <div id="modal" aria-hidden="true">
+        <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+        <div id="sending" class="hidden">
+            <h2 tabindex="0">Sending feedback&hellip;</h2>
+            <div id="sending_img"></div>
+        </div>
+        <div id="error" class="hidden">
+            <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+            <p>Please try submitting your feedback later.</p>
+            <div id="error_icon"></div>
+        </div>
+        <div id="success" class="hidden">
+            <h2 tabindex="0">Thank you for providing feedback!</h2>
+            <p>Your input helps improve our developer documentation.</p>
+            <div id="thank_you_icon"></div>
+        </div>
+
+        <form id="feedback" action="#" method="post">
+            <div class="left-leaf">
+                <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>
+                <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+                <div id="star_group" role="radiogroup" aria-required="true">
+                    <label>
+                        <input class="radio" type="radio" name="helped" value="1" />
+                        Very helpful
+                    </label>
+                    <label>
+                        <input class="radio" type="radio" name="helped" value="2" />
+                        Somewhat helpful
+                    </label>
+                    <label>
+                        <input class="radio" type="radio" name="helped" value="3" />
+                        Not helpful
+                    </label>
+                </div>
+            </div>
+            <div class="right-leaf">
+                <h2>How can we improve this document?</h2>
+                <div id="improve" class="checkboxes">
+                    <label>
+                        <input type="checkbox" name="typo" />
+                        Fix typos or links
+                    </label>
+                    <label>
+                        <input type="checkbox" name="infoIncorrect" />
+                        Fix incorrect information
+                    </label>
+                    <label>
+                        <input type="checkbox" name="needs_examples" />
+                        Add or update code samples
+                    </label>
+                    <label>
+                        <input type="checkbox" name="needs_art" />
+                        Add or update illustrations
+                    </label>
+                    <label>
+                        <input type="checkbox" name="missingInfo" />
+                        Add information about...
+                    </label>
+                </div>
+            </div>
+
+            <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+            <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+            <p class="fineprint">
+                <em aria-hidden="true"><span>*</span> Required information</em>
+            </p>
+
+            <input id="submit" type="button" value="Send" />
+
+            <section id="legal">
+                <p>
+                    To submit a product bug or enhancement request, please visit the
+                    <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a>
+                    page.
+                </p>
+                <p>
+                    Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a>
+                    before you send us your feedback.
+                </p>
+            </section>
+        </form>
+    </div>
+
+
+    <script charset="utf-8" src="../../../../../Resources/1197/JavaScript/lib/prototype.js"></script>
+    <script src="../../../../../Resources/1197/JavaScript/library.js"></script>
+    <script src="../../../../../Resources/1197/JavaScript/feedback.js"></script>
+</body>
+</html>

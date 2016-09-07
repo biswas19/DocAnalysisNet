@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+  <title>Apple News Primer: Basic Design Layout: Article Layout and Design</title>
+  <link rel="stylesheet" type="text/css" href="../../../../Resources/1197/CSS/style-1.6.2.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../Resources/1197/CSS/feedback-1.6.2.css" />
+  <meta charset='utf-8'> 
+<meta id="j-version" name="j-version" content="" />
+<meta id="build" name="build" content="237fbf67d273a1a05f682fec74f5cddc" />
+<meta id="document-version" name="document-version" content="1.0.7" />
+<meta id="book-assignments" name="book-assignments" content="{Type/Guide}" />
+<meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40016784" />
+<meta id="chapterId" name="chapterId" content="TP40016784-CH9">
+<meta id="book-title" name="book-title" content="Apple News Primer: Basic Design Layout" />
+<meta id="book-resource-type" name="book-resource-type" content="Guide" />
+<meta id="book-root" name="book-root" content="./" />
+<meta id="book-json" name="book-json" content="book.json">
+<meta id="date" name="date" content="2016-07-11" />
+<meta id="description" name="description" content="New document that provides examples on how to use basic layout and design features in News." />
+<meta id="IndexTitle" name="IndexTitle" content="" />
+<meta id="resources-uri" name="resources-uri" content="../../../../Resources/1197">
+<link id="book-index-page" rel="Start" title="" type="text/html" href="./index.html">
+<!-- , next_chapter: next_chapter, previous_chapter: previous_chapter -->
+<link id="next-page" rel="Next" type="text/html" href="">
+<link id="previous-page" rel="Prev" type="text/html" href="">
+<meta id="devcenter" name="devcenter" content="<!-- DEVCENTER_NAME -->" />
+<meta id="devcenter-url" name="devcenter-url" content="<!-- DEVCENTER_URL -->" />
+<meta id="reflib" name="reflib" content="<!-- REFLIB_NAME -->" />
+
+<meta id="xcode-display" name="xcode-display" content="render" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+</head>
+
+  <body id="conceptual_flow_with_tasks" class="jazz">
+    	<a name="//apple_ref/doc/uid/TP40016784" title="Apple News Primer: Basic Design Layout"></a>
+
+    <header id="ios_header" class="hideOnPrint hideInXcode">
+  <div class="content-wrapper">
+    <p class="header-text">
+    	<a href="../../../../navigation/">iOS Developer Library
+ 		</a>
+ </p>
+    <p id="wwdr"><img id="apple_logo" src="../../../../Resources/1197/Images/apple2.png" height="14px" width="12px" aria-hidden="true" /><a href="https://developer.apple.com">Developer</a></p>
+  </div>
+</header>
+
+    <section id="valence">
+  <div class="content-wrapper">
+    <p id="hierarchial_navigation">
+      <span id="book_title">Apple News Primer: Basic Design Layout</span>
+    </p>
+    <form id="search" class="hideInXcode" method="get" action="/search/index.php" accept-charset="utf-8" autocomplete="off">
+  <input type="search" id="ssi_SearchField" placeholder="Search iOS Developer Library" name="q" autocomplete="off" tabindex="2" />
+  <input type="hidden" id='platform' name='platform' value="iOS" />
+</form>
+
+      
+   
+   
+
+
+
+    <img id="shortstack" src="../../../../Resources/1197/Images/shortstack_2x.png"/>
+  </div>
+</section>
+    <div class="content-wrapper">
+      <nav id="navigator" class="book-parts hideInXcode" role="navigation">
+    <ul class="nav-parts">
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH5-SW1"
+            class="part-name nav-part-active open-part">
+            <a href="#//apple_ref/doc/uid/TP40016784-CH9-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH9-SW1">Overview</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter nav-current-chapter">
+              	<a href="#//apple_ref/doc/uid/TP40016784-CH9-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH9-SW1">Article Layout and Design</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH6-SW1"
+            class="part-name">
+            <a href="TheBasicStructureofanArticle.html#//apple_ref/doc/uid/TP40016784-CH8-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH8-SW1">Getting Started</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="TheBasicStructureofanArticle.html#//apple_ref/doc/uid/TP40016784-CH8-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH8-SW1">The Basic Structure of an Article</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH33-SW1"
+            class="part-name">
+            <a href="AboutComponentContents.html#//apple_ref/doc/uid/TP40016784-CH43-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH43-SW1">Using Components</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="AboutComponentContents.html#//apple_ref/doc/uid/TP40016784-CH43-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH43-SW1">About Component Contents</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="DefaultComponentTextStyle.html#//apple_ref/doc/uid/TP40016784-CH34-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH34-SW1">Default Component Text Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="DefaultBodyComponentTextStyle.html#//apple_ref/doc/uid/TP40016784-CH35-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH35-SW1">Default Role-Specific Component Text Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="./DropCap:StyleOverride.html#//apple_ref/doc/uid/TP40016784-CH37-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH37-SW1">Drop Cap: Style Override</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ComponentLayouts.html#//apple_ref/doc/uid/TP40016784-CH38-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH38-SW1">Component Layouts</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="UsingDividers.html#//apple_ref/doc/uid/TP40016784-CH39-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH39-SW1">Using Dividers</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH14-SW1"
+            class="part-name">
+            <a href="ThePhotoComponent.html#//apple_ref/doc/uid/TP40016784-CH20-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH20-SW1">Adding Imagery</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="ThePhotoComponent.html#//apple_ref/doc/uid/TP40016784-CH20-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH20-SW1">The Photo Component</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ImagewithaCaptain.html#//apple_ref/doc/uid/TP40016784-CH13-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH13-SW1">Photos with Captions</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="StyleandLayout.html#//apple_ref/doc/uid/TP40016784-CH22-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH22-SW1">Style and Layout</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH23-SW1"
+            class="part-name">
+            <a href="UsingaPullQuote.html#//apple_ref/doc/uid/TP40016784-CH15-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH15-SW1">Using Quotes</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="UsingaPullQuote.html#//apple_ref/doc/uid/TP40016784-CH15-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH15-SW1">Using the Pull Quote Component</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="QuoteStyling.html#//apple_ref/doc/uid/TP40016784-CH24-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH24-SW1">Quote Styling</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH25-SW1"
+            class="part-name">
+            <a href="UsingtheGalleryComponent.html#//apple_ref/doc/uid/TP40016784-CH26-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH26-SW1">Selecting a Gallery</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="UsingtheGalleryComponent.html#//apple_ref/doc/uid/TP40016784-CH26-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH26-SW1">About the Gallery Component</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="AddingMosaics.html#//apple_ref/doc/uid/TP40016784-CH29-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH29-SW1">Mosaics</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH30-SW1"
+            class="part-name">
+            <a href="Tweets.html#//apple_ref/doc/uid/TP40016784-CH31-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH31-SW1">Using Embeds</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="Tweets.html#//apple_ref/doc/uid/TP40016784-CH31-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH31-SW1">Tweet</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Maps.html#//apple_ref/doc/uid/TP40016784-CH32-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH32-SW1">Maps</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40016784-CH18-SW1"
+            class="part-name">
+            <a href="TheJSON.html#//apple_ref/doc/uid/TP40016784-CH19-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH19-SW1">Putting It Together</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="TheJSON.html#//apple_ref/doc/uid/TP40016784-CH19-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH19-SW1">The JSON File</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="revision-history"
+            class="part-name">
+          <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40016784-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH99-SW1">Revision History</a>
+          <ul class="nav-chapters">
+            <li class="nav-chapter">
+              <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40016784-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH99-SW1">Document Revision History</a>
+            </li>
+          </ul>
+        </li>
+    </ul>
+</nav>
+
+      <menu id="bashful" type="toolbar">
+  <div class="shield"></div>
+  <menuitem id="jump_to" class="menu-bar-item closed">
+  <span>On This Page</span>
+  <div class="chevron">
+    <div class="chevy chevron-left"></div>
+    <div class="chevy chevron-right"></div>
+  </div>
+  <menu type="list" class="details">
+      <ul class="list-bullet">
+          <li class="item">
+            <a href="#//apple_ref/doc/uid/TP40016784-CH9-SW3">Basic Design Features</a>
+          </li>
+          <li class="item">
+            <a href="#//apple_ref/doc/uid/TP40016784-CH9-SW2">How to Use This Primer</a>
+          </li>
+          <li class="item">
+            <a href="#//apple_ref/doc/uid/TP40016784-CH9-SW4">Related Documentation</a>
+          </li>
+      </ul>
+  </menu>
+</menuitem>
+
+</menu>
+<div class="pixel-line"></div>
+<div class="rubber-band-gap"></div>
+<article class="chapter">
+  <a name="//apple_ref/doc/uid/TP40016784-CH9"></a><a name="//apple_ref/doc/uid/TP40016784-CH9-SW1"></a>
+      <a name="//apple_ref/doc/uid/TP40016784-CH5"></a><a name="//apple_ref/doc/uid/TP40016784-CH5-SW1"></a>
+
+  <h2 class='chapter-name'>Article Layout and Design</h2>
+
+
+  
+  	<section class="section">
+  		<p class="para">
+  With Apple News Format, you can create signature content for News. Beautiful typography, rich photo galleries, videos, and fun animations bring your articles to life. You can author once and News will optimize your content for iPhone, iPad, and iPad Pro, so your readers will have a great experience no matter which device theyâ€™re using.
+</p>
+<p class="para">
+  This document covers some of the basic layout and design features for articles. All features covered in this document are included in downloadable JavaScript Object Notation (JSON) files. You can use the JSON examples to create your own designs.
+</p>
+
+		</section> 
+
+
+  <section class="section">
+  <a name="//apple_ref/doc/uid/TP40016784-CH9-SW3"></a>
+  <h3 class="section-name" tabindex="0">Basic Design Features</h3>
+  <p class="para">
+  This section shows the some of the features covered in this primer for a basic example JSON article. The layout shows the scaling of an article on three different divices, using the iPad Pro, iPad, and iPhone.
+</p><p class="para">
+  <strong>First Screen</strong>
+</p><figure class="figure">
+  
+  <span class="caption"></span>
+  <img src="Art/anatomy1.jpeg" alt="image: ../Art/anatomy1.jpeg" width="700" height="394" />
+</figure><p class="para">
+  <strong>Second Screen</strong>
+</p><figure class="figure">
+  
+  <span class="caption"></span>
+  <img src="Art/anatomy2.jpg" alt="image: ../Art/anatomy2.jpg" width="700" height="394" />
+</figure><p class="para">
+  <strong>Third Screen</strong>
+</p><figure class="figure">
+  
+  <span class="caption"></span>
+  <img src="Art/anatomy3.jpeg" alt="image: ../Art/anatomy3.jpeg" width="700" height="394" />
+</figure>
+  
+</section>
+<section class="section">
+  <a name="//apple_ref/doc/uid/TP40016784-CH9-SW2"></a>
+  <h3 class="section-name" tabindex="0">How to Use This Primer</h3>
+  <p class="para">
+  This primer has six major sections grouped into categories of similar features. 
+</p><ul class="list-bullet">
+  <li class="item"><p class="para">
+  <span class="x-name"><a href="TheBasicStructureofanArticle.html#//apple_ref/doc/uid/TP40016784-CH6-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH6-SW1">Getting Started</a></span> covers the basic JSON structure.
+</p>
+</li><li class="item"><p class="para">
+  <span class="x-name"><a href="AboutComponentContents.html#//apple_ref/doc/uid/TP40016784-CH33-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH33-SW1">Using Components</a></span> explains how to design the layout and use text and style components.
+</p>
+</li><li class="item"><p class="para">
+  <span class="x-name"><a href="ThePhotoComponent.html#//apple_ref/doc/uid/TP40016784-CH14-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH14-SW1">Adding Imagery</a></span> discusses the photo component and the use of captions.
+</p>
+</li><li class="item"><p class="para">
+  <span class="x-name"><a href="UsingaPullQuote.html#//apple_ref/doc/uid/TP40016784-CH23-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH23-SW1">Using Quotes</a></span> shows you how to use pull quotes and ways you can style quotes.
+</p>
+</li><li class="item"><p class="para">
+  <span class="x-name"><a href="UsingtheGalleryComponent.html#//apple_ref/doc/uid/TP40016784-CH25-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH25-SW1">Selecting a Gallery</a></span> shows you how to include a sequence of images to enhance your articles.
+</p>
+</li><li class="item"><p class="para">
+  <span class="x-name"><a href="Tweets.html#//apple_ref/doc/uid/TP40016784-CH30-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH30-SW1">Using Embeds</a></span> explains how to insert maps and content from social media.
+</p>
+</li>
+</ul><p class="para">
+  Each section builds on the previous, providing code snippets for each feature. The snippets are followed by a downloadable <code class="code-voice">article.JSON</code> file containing all features discussed in the previous section(s). Each major section contains a set downloadble JSON files that include code for the entire section. Just navigate to the folder and select the file you want to work with. Each file contains the name of the design feature. 
+</p><p class="para">
+  The final chapter, <span class="x-name"><a href="TheJSON.html#//apple_ref/doc/uid/TP40016784-CH18-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH18-SW1">Putting It Together</a></span>, contains the complete <code class="code-voice">article.JSON</code> example. You can use any of these files as templates and customize them for your needs.
+</p>
+  
+</section>
+<section class="section">
+  <a name="//apple_ref/doc/uid/TP40016784-CH9-SW4"></a>
+  <h3 class="section-name" tabindex="0">Related Documentation</h3>
+  <p class="para">
+  For additional information on JSON and Apple News Format, see <a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/Apple_News_Format_Ref/">Apple News Format Reference</a>.
+</p>
+  
+</section>
+
+  	
+ 	<section id="next_previous" class="">
+  			<p class="next-link"><a href="TheBasicStructureofanArticle.html#//apple_ref/doc/uid/TP40016784-CH8-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH8-SW1">The Basic Structure of an Article</a></p>
+
+    <p class="copyright">Copyright &#x00a9; 2016 Apple Inc. All rights reserved. 
+  <a class="link" href="http://www.apple.com/legal/terms/site.html" target="_blank" rel="external">Terms of Use</a> | 
+  <a class="link" href="http://www.apple.com/privacy/" target="_blank" rel="external">Privacy Policy</a> | 
+  <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40016784-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40016784-CH99-SW1">Updated: 2016-07-11</a>
+</p>
+  </section>
+</article>
+
+    </div>
+    <div id='big_button'></div>
+    <footer id="footer">
+  <div class="content-wrapper">
+  	<div id="leave_feedback" class="button" role="button" tabindex="0">Feedback</div>
+  </div>
+  <script src="../../../../Resources/1197/JavaScript/devpubs-1.6.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../../Resources/1197/JavaScript/feedback-1.6.2.js" type="text/javascript" charset="utf-8"></script>
+  <div id="_omniture_top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusdeveloper,dappdeveloperlib"
+</script>
+
+<script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName();
+s.channel="www.us.developer"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+</footer>
+
+    
+  </body>
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+</div>
+</html>
+

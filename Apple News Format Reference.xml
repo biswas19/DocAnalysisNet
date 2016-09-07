@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+  <title>Apple News Format Reference: Features Supported in iOS 10 Beta</title>
+  <link rel="stylesheet" type="text/css" href="../../../../Resources/1197/CSS/style-1.6.2.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../Resources/1197/CSS/feedback-1.6.2.css" />
+  <meta charset='utf-8'> 
+<meta id="j-version" name="j-version" content="" />
+<meta id="build" name="build" content="237fbf67d273a1a05f682fec74f5cddc" />
+<meta id="document-version" name="document-version" content="1.6.8" />
+<meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/General}" />
+<meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40015408" />
+<meta id="chapterId" name="chapterId" content="TP40015408-CH102">
+<meta id="book-title" name="book-title" content="Apple News Format Reference" />
+<meta id="book-resource-type" name="book-resource-type" content="Guide" />
+<meta id="book-root" name="book-root" content="./" />
+<meta id="book-json" name="book-json" content="book.json">
+<meta id="date" name="date" content="2016-07-11" />
+<meta id="description" name="description" content="Describes the custom JSON format for creating content for the News app." />
+<meta id="IndexTitle" name="IndexTitle" content="" />
+<meta id="resources-uri" name="resources-uri" content="../../../../Resources/1197">
+<link id="book-index-page" rel="Start" title="" type="text/html" href="./index.html">
+<!-- , next_chapter: next_chapter, previous_chapter: previous_chapter -->
+<link id="next-page" rel="Next" type="text/html" href="">
+<link id="previous-page" rel="Prev" type="text/html" href="">
+<meta id="devcenter" name="devcenter" content="<!-- DEVCENTER_NAME -->" />
+<meta id="devcenter-url" name="devcenter-url" content="<!-- DEVCENTER_URL -->" />
+<meta id="reflib" name="reflib" content="<!-- REFLIB_NAME -->" />
+
+<meta id="xcode-display" name="xcode-display" content="render" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+</head>
+
+  <body id="conceptual_flow_with_tasks" class="jazz">
+    	<a name="//apple_ref/doc/uid/TP40015408" title="Apple News Format Reference"></a>
+
+    <header id="ios_header" class="hideOnPrint hideInXcode">
+  <div class="content-wrapper">
+    <p class="header-text">
+    	<a href="../../../../navigation/">iOS Developer Library
+ 		</a>
+ </p>
+    <p id="wwdr"><img id="apple_logo" src="../../../../Resources/1197/Images/apple2.png" height="14px" width="12px" aria-hidden="true" /><a href="https://developer.apple.com">Developer</a></p>
+  </div>
+</header>
+
+    <section id="valence">
+  <div class="content-wrapper">
+    <p id="hierarchial_navigation">
+      <span id="book_title">Apple News Format Reference</span>
+    </p>
+    <form id="search" class="hideInXcode" method="get" action="/search/index.php" accept-charset="utf-8" autocomplete="off">
+  <input type="search" id="ssi_SearchField" placeholder="Search iOS Developer Library" name="q" autocomplete="off" tabindex="2" />
+  <input type="hidden" id='platform' name='platform' value="iOS" />
+</form>
+
+      
+   
+   
+
+
+
+    <img id="shortstack" src="../../../../Resources/1197/Images/shortstack_2x.png"/>
+  </div>
+</section>
+    <div class="content-wrapper">
+      <nav id="navigator" class="book-parts hideInXcode" role="navigation">
+    <ul class="nav-parts">
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH78-SW1"
+            class="part-name nav-part-active open-part">
+            <a href="#//apple_ref/doc/uid/TP40015408-CH102-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH102-SW1">Introduction</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter nav-current-chapter">
+              	<a href="#//apple_ref/doc/uid/TP40015408-CH102-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH102-SW1">Features Supported in iOS 10 Beta</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="AppleNewsFormat.html#//apple_ref/doc/uid/TP40015408-CH79-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH79-SW1">Apple News Format</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="AboutAppleNewsFormatContent.html#//apple_ref/doc/uid/TP40015408-CH95-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH95-SW1">About Apple News Format Content</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="StructureOverview.html#//apple_ref/doc/uid/TP40015408-CH80-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH80-SW1">Creating Content for News</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Properties.html#//apple_ref/doc/uid/TP40015408-CH2-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH2-SW1">Properties</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Metadata.html#//apple_ref/doc/uid/TP40015408-CH3-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH3-SW1">Metadata</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH4-SW1"
+            class="part-name">
+            <a href="Component.html#//apple_ref/doc/uid/TP40015408-CH5-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH5-SW1">Components</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="Component.html#//apple_ref/doc/uid/TP40015408-CH5-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH5-SW1">Component</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Audio.html#//apple_ref/doc/uid/TP40015408-CH6-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH6-SW1">Audio</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Author.html#//apple_ref/doc/uid/TP40015408-CH7-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH7-SW1">Author</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="BannerAdvertisement.html#//apple_ref/doc/uid/TP40015408-CH8-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH8-SW1">Banner Advertisement</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Body.html#//apple_ref/doc/uid/TP40015408-CH9-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH9-SW1">Body</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Byline.html#//apple_ref/doc/uid/TP40015408-CH10-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH10-SW1">Byline</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Caption.html#//apple_ref/doc/uid/TP40015408-CH11-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH11-SW1">Caption</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Chapter.html#//apple_ref/doc/uid/TP40015408-CH12-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH12-SW1">Chapter</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Container.html#//apple_ref/doc/uid/TP40015408-CH13-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH13-SW1">Container</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Divider.html#//apple_ref/doc/uid/TP40015408-CH14-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH14-SW1">Divider</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="EmbedVideo.html#//apple_ref/doc/uid/TP40015408-CH15-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH15-SW1">Embed Web Video</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="FacebookPost.html#//apple_ref/doc/uid/TP40015408-CH106-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH106-SW1">Facebook Post</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Figure.html#//apple_ref/doc/uid/TP40015408-CH16-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH16-SW1">Figure</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Gallery.html#//apple_ref/doc/uid/TP40015408-CH17-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH17-SW1">Gallery</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Header.html#//apple_ref/doc/uid/TP40015408-CH18-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH18-SW1">Header</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Heading.html#//apple_ref/doc/uid/TP40015408-CH19-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH19-SW1">Heading</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Illustrator.html#//apple_ref/doc/uid/TP40015408-CH20-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH20-SW1">Illustrator</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Image.html#//apple_ref/doc/uid/TP40015408-CH21-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH21-SW1">Image</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Instagram.html#//apple_ref/doc/uid/TP40015408-CH22-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH22-SW1">Instagram</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Intro.html#//apple_ref/doc/uid/TP40015408-CH23-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH23-SW1">Intro</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Logo.html#//apple_ref/doc/uid/TP40015408-CH24-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH24-SW1">Logo</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Map.html#//apple_ref/doc/uid/TP40015408-CH97-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH97-SW1">Map</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="MediumRectangleAdvertisement.html#//apple_ref/doc/uid/TP40015408-CH25-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH25-SW1">Medium Rectangle Advertisement</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Mosaic.html#//apple_ref/doc/uid/TP40015408-CH26-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH26-SW1">Mosaic</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Music.html#//apple_ref/doc/uid/TP40015408-CH27-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH27-SW1">Music</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Photo.html#//apple_ref/doc/uid/TP40015408-CH28-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH28-SW1">Photo</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Photographer.html#//apple_ref/doc/uid/TP40015408-CH29-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH29-SW1">Photographer</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Place.html#//apple_ref/doc/uid/TP40015408-CH98-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH98-SW1">Place</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Portrait.html#//apple_ref/doc/uid/TP40015408-CH30-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH30-SW1">Portrait</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Pullquote.html#//apple_ref/doc/uid/TP40015408-CH31-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH31-SW1">Pull Quote</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Quote.html#//apple_ref/doc/uid/TP40015408-CH32-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH32-SW1">Quote</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Section.html#//apple_ref/doc/uid/TP40015408-CH34-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH34-SW1">Section</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Title.html#//apple_ref/doc/uid/TP40015408-CH36-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH36-SW1">Title</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Tweet.html#//apple_ref/doc/uid/TP40015408-CH37-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH37-SW1">Tweet</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Video.html#//apple_ref/doc/uid/TP40015408-CH38-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH38-SW1">Video</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="VinePost.html#//apple_ref/doc/uid/TP40015408-CH107-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH107-SW1">Vine Post</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH105-SW1"
+            class="part-name">
+            <a href="ComponentAnimation.html#//apple_ref/doc/uid/TP40015408-CH40-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH40-SW1">Component Animations</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="ComponentAnimation.html#//apple_ref/doc/uid/TP40015408-CH40-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH40-SW1">Component Animation</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="AppearAnimation.html#//apple_ref/doc/uid/TP40015408-CH52-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH52-SW1">Appear Animation</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="FadeInAnimation.html#//apple_ref/doc/uid/TP40015408-CH62-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH62-SW1">Fade-in Animation</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="MoveInAnimation.html#//apple_ref/doc/uid/TP40015408-CH68-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH68-SW1">Move-in Animation</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ScaleFade.html#//apple_ref/doc/uid/TP40015408-CH72-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH72-SW1">Scale Fade Animation</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH81-SW1"
+            class="part-name">
+            <a href="FadingStickyHeader.html#//apple_ref/doc/uid/TP40015408-CH49-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH49-SW1">Scenes</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="FadingStickyHeader.html#//apple_ref/doc/uid/TP40015408-CH49-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH49-SW1">Fading Sticky Header</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ParallaxScaleHeader.html#//apple_ref/doc/uid/TP40015408-CH50-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH50-SW1">Parallax Scale Header</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH87-SW1"
+            class="part-name">
+            <a href="LinkAddition.html#//apple_ref/doc/uid/TP40015408-CH88-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH88-SW1">Additions</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="LinkAddition.html#//apple_ref/doc/uid/TP40015408-CH88-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH88-SW1">Link Addition</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH82-SW1"
+            class="part-name">
+            <a href="Behavior.html#//apple_ref/doc/uid/TP40015408-CH41-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH41-SW1">Behaviors</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="Behavior.html#//apple_ref/doc/uid/TP40015408-CH41-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH41-SW1">Behavior</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="BackgroundMotionBehavior.html#//apple_ref/doc/uid/TP40015408-CH53-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH53-SW1">Background Motion</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="BackgroundParallaxBehavior.html#//apple_ref/doc/uid/TP40015408-CH54-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH54-SW1">Background Parallax</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="MotionBehavior.html#//apple_ref/doc/uid/TP40015408-CH67-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH67-SW1">Motion</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ParallaxBehavior.html#//apple_ref/doc/uid/TP40015408-CH70-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH70-SW1">Parallax</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="SpringyBehavior.html#//apple_ref/doc/uid/TP40015408-CH73-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH73-SW1">Springy</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH83-SW1"
+            class="part-name">
+            <a href="ComponentLayout.html#//apple_ref/doc/uid/TP40015408-CH56-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH56-SW1">Layout and Position</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="ComponentLayout.html#//apple_ref/doc/uid/TP40015408-CH56-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH56-SW1">Component Layout</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Layout.html#//apple_ref/doc/uid/TP40015408-CH65-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH65-SW1">Layout</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH39-SW1"
+            class="part-name">
+            <a href="Border.html#//apple_ref/doc/uid/TP40015408-CH55-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH55-SW1">Styles</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="Border.html#//apple_ref/doc/uid/TP40015408-CH55-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH55-SW1">Border</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ComponentStyle.html#//apple_ref/doc/uid/TP40015408-CH57-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH57-SW1">Component Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ComponentTextStyle.html#//apple_ref/doc/uid/TP40015408-CH58-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH58-SW1">Component Text Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="DocumentStyle.html#//apple_ref/doc/uid/TP40015408-CH60-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH60-SW1">Document Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="DropCapStyle.html#//apple_ref/doc/uid/TP40015408-CH61-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH61-SW1">Drop Cap Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="InlineTextStyle.html#//apple_ref/doc/uid/TP40015408-CH64-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH64-SW1">Inline Text Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Shadow.html#//apple_ref/doc/uid/TP40015408-CH90-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH90-SW1">Shadow</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="StrokeStyle.html#//apple_ref/doc/uid/TP40015408-CH74-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH74-SW1">Stroke Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="TextStrokeStyle.html#//apple_ref/doc/uid/TP40015408-CH76-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH76-SW1">Text Stroke Style</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="TextStyle.html#//apple_ref/doc/uid/TP40015408-CH77-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH77-SW1">Text Style</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH104-SW1"
+            class="part-name">
+            <a href="LinearGradientFill.html#//apple_ref/doc/uid/TP40015408-CH45-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH45-SW1">Fills</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="LinearGradientFill.html#//apple_ref/doc/uid/TP40015408-CH45-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH45-SW1">Linear Gradient Fill</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ImageFill.html#//apple_ref/doc/uid/TP40015408-CH46-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH46-SW1">Image Fill</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="VideoFill.html#//apple_ref/doc/uid/TP40015408-CH47-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH47-SW1">Video Fill</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH96-SW1"
+            class="part-name">
+            <a href="AdvertisingLayout.html#//apple_ref/doc/uid/TP40015408-CH94-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH94-SW1">Referenced Properties</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="AdvertisingLayout.html#//apple_ref/doc/uid/TP40015408-CH94-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH94-SW1">Advertising Layout</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="AdvertisingSettings.html#//apple_ref/doc/uid/TP40015408-CH93-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH93-SW1">Advertising Settings</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Anchor.html#//apple_ref/doc/uid/TP40015408-CH51-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH51-SW1">Anchor</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="CaptionDescriptor.html#//apple_ref/doc/uid/TP40015408-CH91-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH91-SW1">Caption Descriptor</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ColorStop.html#//apple_ref/doc/uid/TP40015408-CH43-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH43-SW1">Color Stop</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="ContentInset.html#//apple_ref/doc/uid/TP40015408-CH59-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH59-SW1">Content Inset</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="CoverArt.html#//apple_ref/doc/uid/TP40015408-CH108-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH108-SW1">Cover Art</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="GalleryItem.html#//apple_ref/doc/uid/TP40015408-CH63-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH63-SW1">Gallery Item</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="MapItem.html#//apple_ref/doc/uid/TP40015408-CH100-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH100-SW1">Map Item</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="MapSpan.html#//apple_ref/doc/uid/TP40015408-CH101-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH101-SW1">Map Span</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Margin.html#//apple_ref/doc/uid/TP40015408-CH66-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH66-SW1">Margin</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Offset.html#//apple_ref/doc/uid/TP40015408-CH92-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH92-SW1">Offset</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="//apple_ref/doc/uid/TP40015408-CH86-SW1"
+            class="part-name">
+            <a href="Roles.html#//apple_ref/doc/uid/TP40015408-CH84-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH84-SW1">Appendixes</a>
+          <ul class="nav-chapters">
+              <li class="nav-chapter">
+              	<a href="Roles.html#//apple_ref/doc/uid/TP40015408-CH84-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH84-SW1">Component Role Summary</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Markdown.html#//apple_ref/doc/uid/TP40015408-CH85-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH85-SW1">Markdown for Apple News Format</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="SupportedUnits.html#//apple_ref/doc/uid/TP40015408-CH75-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH75-SW1">Units of Measure for Components</a>
+              </li>
+              <li class="nav-chapter">
+              	<a href="Encoding.html#//apple_ref/doc/uid/TP40015408-CH103-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH103-SW1">Percent Encoding</a>
+              </li>
+          </ul>
+        </li>
+        <li data-id="revision-history"
+            class="part-name">
+          <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40015408-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH99-SW1">Revision History</a>
+          <ul class="nav-chapters">
+            <li class="nav-chapter">
+              <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40015408-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH99-SW1">Document Revision History</a>
+            </li>
+          </ul>
+        </li>
+    </ul>
+</nav>
+
+      <menu id="bashful" type="toolbar">
+  <div class="shield"></div>
+  <menuitem id="jump_to" class="menu-bar-item closed">
+  <span>On This Page</span>
+  <div class="chevron">
+    <div class="chevy chevron-left"></div>
+    <div class="chevy chevron-right"></div>
+  </div>
+  <menu type="list" class="details">
+      <ul class="list-bullet">
+          <li class="item">
+            <a href="#//apple_ref/doc/uid/TP40015408-CH102-SW2">Features</a>
+          </li>
+          <li class="item">
+            <a href="#//apple_ref/doc/uid/TP40015408-CH102-SW3">Previewing these New Features in Your Articles</a>
+          </li>
+      </ul>
+  </menu>
+</menuitem>
+
+</menu>
+<div class="pixel-line"></div>
+<div class="rubber-band-gap"></div>
+<article class="chapter">
+  <a name="//apple_ref/doc/uid/TP40015408-CH102"></a><a name="//apple_ref/doc/uid/TP40015408-CH102-SW1"></a>
+      <a name="//apple_ref/doc/uid/TP40015408-CH78"></a><a name="//apple_ref/doc/uid/TP40015408-CH78-SW1"></a>
+
+  <h2 class='chapter-name'>Features Supported in iOS 10 Beta</h2>
+
+
+  
+  	<section class="section">
+  		<p class="para">
+  This release of Apple News Format includes a set of features designed for iOS 10 beta. These features add more authoring capabilities to existing style components.
+</p>
+<p class="para">
+  Previewing the results of these new features requires the latest version of iOS and Xcode beta software. See <span class="x-name"><a href="#//apple_ref/doc/uid/TP40015408-CH102-SW3" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH102-SW3">Previewing these New Features in Your Articles</a></span>.
+</p>
+
+		</section> 
+
+
+  <section class="section">
+  <a name="//apple_ref/doc/uid/TP40015408-CH102-SW2"></a>
+  <h3 class="section-name" tabindex="0">Features</h3>
+  <p class="para">
+  Apple News Format provides additional authoring properties for the following items:
+</p><ul class="list-bullet">
+  <li class="item"><p class="para">
+  <strong>Social Media Embeds:</strong> Now, you can embed <span class="x-name"><a href="FacebookPost.html#//apple_ref/doc/uid/TP40015408-CH106-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH106-SW1">Facebook Post</a></span>s and <span class="x-name"><a href="VinePost.html#//apple_ref/doc/uid/TP40015408-CH107-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH107-SW1">Vine Post</a></span>s inside your articles.
+</p>
+</li><li class="item"><p class="para">
+  <strong>Featured Stories:</strong> Featured Stories is a new article group in the For You feed of the News app. These articles contain additional publisher-supplied <span class="x-name"><a href="CoverArt.html#//apple_ref/doc/uid/TP40015408-CH108-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH108-SW1">Cover Art</a></span>, which may include text. You can choose from three aspect ratios and should provide device-optimized sizes for best rendering. You can submit Featured Stories and Apple editorially curates them.
+</p>
+</li>
+</ul><p class="para">
+  For a list of other feature changes, see the <span class="x-name"><a href="RevisionHistory.html#//apple_ref/doc/uid/TP40015408-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH99-SW1">Revision History</a></span>.
+</p>
+  
+</section>
+<section class="section">
+  <a name="//apple_ref/doc/uid/TP40015408-CH102-SW3"></a>
+  <h3 class="section-name" tabindex="0">Previewing these New Features in Your Articles</h3>
+  <p class="para">
+  To preview these new features in the <a href="https://developer.apple.com/go/?id=news-preview">News Preview</a> app or on a device, you need to have the following software versions installed:
+</p><ul class="list-bullet">
+  <li class="item"><p class="para">
+  <a href="https://developer.apple.com/ios/download/">iOS 10 beta</a> (for on device)
+</p>
+</li><li class="item"><p class="para">
+  <a href="https://developer.apple.com/xcode/download/">Xcode 8 beta</a> (for News Preview)
+</p>
+</li>
+</ul><p class="para">
+  Once you install the beta software listed above, you can use all features of Apple News Format.
+</p>
+  
+</section>
+
+  	
+ 	<section id="next_previous" class="">
+  			<p class="next-link"><a href="AppleNewsFormat.html#//apple_ref/doc/uid/TP40015408-CH79-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH79-SW1">Apple News Format</a></p>
+
+    <p class="copyright">Copyright &#x00a9; 2016 Apple Inc. All rights reserved. 
+  <a class="link" href="http://www.apple.com/legal/terms/site.html" target="_blank" rel="external">Terms of Use</a> | 
+  <a class="link" href="http://www.apple.com/privacy/" target="_blank" rel="external">Privacy Policy</a> | 
+  <a href="RevisionHistory.html#//apple_ref/doc/uid/TP40015408-CH99-SW1" data-renderer-version="2" data-id="//apple_ref/doc/uid/TP40015408-CH99-SW1">Updated: 2016-07-11</a>
+</p>
+  </section>
+</article>
+
+    </div>
+    <div id='big_button'></div>
+    <footer id="footer">
+  <div class="content-wrapper">
+  	<div id="leave_feedback" class="button" role="button" tabindex="0">Feedback</div>
+  </div>
+  <script src="../../../../Resources/1197/JavaScript/devpubs-1.6.2.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../../Resources/1197/JavaScript/feedback-1.6.2.js" type="text/javascript" charset="utf-8"></script>
+  <div id="_omniture_top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusdeveloper,dappdeveloperlib"
+</script>
+
+<script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName();
+s.channel="www.us.developer"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+</footer>
+
+    
+  </body>
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+</div>
+</html>
+

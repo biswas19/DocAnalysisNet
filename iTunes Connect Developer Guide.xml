@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About iTunes Connect</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40011225">
+    <meta id="document-version" name="document-version" content="19.10.2">
+    <meta id="build" name="build" content="237fbf67d273a1a05f682fec74f5cddc" />
+    <meta id="chapterId" name="chapterId" content="TP40011225-CH1">
+    <meta id="date" name="date" content="2016-07-07">
+    <meta id="description" name="description" content="Describes how to use the iTunes Connect website to manage iOS and Mac apps on the App Store.">
+    <meta id="book-title" name="book-title" content="iTunes Connect Developer Guide">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="iOS Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/ios">
+    <meta id="reflib" name="reflib" content="iOS Developer Library">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/Languages & Utilities}">
+    
+    
+    <meta id="copyright" name="copyright" content="Copyright 2016 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="iTunes Connect Developer Guide: About iTunes Connect">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/1197">
+    <link id="book-index-page" rel="Start" title="iTunes Connect Developer Guide" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="OverviewofiTunesConnect.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1197/CSS/screen.css">
+    
+    <!-- xcode_css -->
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1197/CSS/feedback.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40011225-CH1" title="About iTunes Connect"></a>
+    <div id="_omniture_top">
+    <!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+    <script type="text/javascript">
+    /* RSID: */
+    var s_account="appleglobal,appleusdeveloper,dappdeveloperlib"
+    </script>
+
+    <script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+    <script type="text/javascript">
+    s.pageName=AC.Tracking.pageName();
+    s.channel="www.us.developer"
+
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)</script>
+    <!-- End SiteCatalyst code version: H.8. -->
+    </div>
+
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode phone">
+            <a id="ssi_LibraryTitle" href='../../../../../navigation/'>iOS Developer Library</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='../../../../../search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search iOS Developer Library</label>
+            
+            
+                <input type='hidden' id='ssi_Platform' name='platform' value='iOS'>
+            
+    
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>iTunes Connect Developer Guide</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='OverviewofiTunesConnect.html'>Next</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40011225" title="About iTunes Connect"></a><a name="//apple_ref/doc/uid/TP40011225-CH1-SW1" title="About iTunes Connect"></a>
+<h1 id="pageTitle">About iTunes Connect</h1>
+
+<a name="//apple_ref/doc/uid/TP40011225-CH1-DontLinkElementID_1"></a>
+<p>
+<span class="content_text"><a href="https://itunesconnect.apple.com" class="urlLink" rel="external">iTunes Connect</a></span> is a suite of web-based tools created for developers to submit and manage their apps for sale in the App Store or the Mac App Store. This document describes how to use iTunes Connect before, while, and after submitting an app for distribution through the store.</p>
+<figure class="figure">
+<img src="../Art/NewIntro_2x.png" class="wide-image" alt="../Art/NewIntro_2x.png" width="672" height="189"><img src="../Art/NewIntro_2x.png" class="ipad-scaled-image" alt="../Art/NewIntro_2x.png" width="670" height="188">
+</figure>
+<p>iTunes Connect organizes your portfolio of store content, legal and tax documents, and contact information so that you can easily find and add to the material. It also collects status information, feedback, and earnings information provided by Apple, allowing you to manage your appâ€™s sales progress from a single place.</p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40011225-CH1-SW3" title="Note"></a><p><strong>Note:</strong>&nbsp;Certain iTunes Connect pages can be viewed in languages other than English. To change the language you see in iTunes Connect, you must change your language preference in your operating system settings: on a Mac, go to System Preferences and then Language &amp; Region.</p><p></p></aside></div>
+
+<a name="//apple_ref/doc/uid/TP40011225-CH1-DontLinkElementID_2" title="At a Glance"></a><h2 class="jump">At a Glance</h2>
+<p>This document helps you understand how to use iTunes Connect before, while, and after uploading a build and submitting an app for distribution through the App Store or Mac App Store.</p>
+<section><a name="//apple_ref/doc/uid/TP40011225-CH1-SW2" title="Before Submitting Apps"></a>
+<h3>Before Submitting Apps</h3>
+<p>After reading a quick overview of the iTunes Connect website, you can get started with contract requirements so that the process is complete by the time your app is ready for the store. Your <em class="newTerm">team agent</em>â€”the first member of your organization to register with iTunes Connectâ€”can delegate most of these tasks by inviting others to join the iTunes Connect organization and configuring their accounts to have the appropriate access to iTunes Connect sections.</p><section><a name="//apple_ref/doc/uid/TP40011225-CH1-SW9" title="Related Chapters"></a><h4>Related Chapters</h4><ul class="simple"><li><p><span class="content_text"><a href="OverviewofiTunesConnect.html#//apple_ref/doc/uid/TP40011225-CH12-SW1" data-renderer-version="1">Overview of iTunes Connect</a></span></p></li><li><p><span class="content_text"><a href="FirstSteps.html#//apple_ref/doc/uid/TP40011225-CH19-SW1" data-renderer-version="1">First Steps: Identifying Your App in iTunes Connect</a></span></p></li><li><p><span class="content_text"><a href="SettingUpUserAccounts.html#//apple_ref/doc/uid/TP40011225-CH25-SW1" data-renderer-version="1">Setting Up User Accounts</a></span></p></li><li><p><span class="content_text"><a href="ManagingContractsandBanking.html#//apple_ref/doc/uid/TP40011225-CH21-SW1" data-renderer-version="1">Managing Agreements, Tax, and Banking</a></span></p></li></ul></section>
+</section>
+<section><a name="//apple_ref/doc/uid/TP40011225-CH1-SW4" title="During App Submission"></a>
+<h3>During App Submission</h3>
+<p>The first time you submit an app to the store, you create an <em class="newTerm">iTunes Connect record</em> for it. If the app uses any of Appleâ€™s store technologiesâ€”such as Game Center or In-App Purchaseâ€”you enable those services in the iTunes Connect record, also called an â€œApp record.â€ You can also include app information in multiple languages to display in stores.</p>
+<p>After you create the iTunes Connect record, you upload a build for the app.</p>
+<p>If the app runs on iOS, you can have users from your organization try it out before you submit it to the store.</p>
+<p>Then submit your app to be reviewed. After a successful review, your app is put on sale in the App Store.</p>
+<div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40011225-CH1-SW5" title="Related Chapters"></a>
+<p><strong>Related Chapters:</strong>&nbsp;
+
+<span class="content_text"><a href="CreatingiTunesConnectRecord.html#//apple_ref/doc/uid/TP40011225-CH13-SW1" data-renderer-version="1">Creating an iTunes Connect Record for an App</a></span>, <span class="content_text"><a href="ConfiguringStoreTechnologies.html#//apple_ref/doc/uid/TP40011225-CH2-SW6" data-renderer-version="1">Configuring Store Technologies (Optional)</a></span>, <span class="content_text"><a href="DisplayInMoreLanguages.html#//apple_ref/doc/uid/TP40011225-CH28-SW1" data-renderer-version="1">Displaying on the Store in More Than One Language (Optional)</a></span>, <span class="content_text"><a href="SubmittingTheApp.html#//apple_ref/doc/uid/TP40011225-CH33-SW1" data-renderer-version="1">Submitting the App to App Review</a></span>, <span class="content_text"><a href="BetaTestingTheApp.html#//apple_ref/doc/uid/TP40011225-CH35-SW2" data-renderer-version="1">TestFlight Beta Testing (Optional)</a></span>, <span class="content_text"><a href="ConfiguringInAppPurchases.html#//apple_ref/doc/uid/TP40011225-CH51-SW1" data-renderer-version="1">Configuring In-App Purchases (Optional)</a></span>, <span class="content_text"><a href="ConfiguringGameCenter.html#//apple_ref/doc/uid/TP40011225-CH52-SW1" data-renderer-version="1">Configurung Game Center (Optional)</a></span>.
+</p><p>
+</p></aside></div>
+</section>
+<section><a name="//apple_ref/doc/uid/TP40011225-CH1-SW6" title="After Apps Are Available on the Store"></a>
+<h3>After Apps Are Available on the Store</h3>
+<p>iTunes Connect provides information about your app, including sales numbers, download numbers, and your earnings. You can find information from your customersâ€™ experience with your app, such as customer reviews, crash reports, and the top scores reported in Game Center leaderboards. You can also view an inventory of your apps and their configurations by running catalog reports.</p>
+<div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40011225-CH1-SW7" title="Related Chapters"></a>
+<p><strong>Related Chapters:</strong>&nbsp;
+
+<span class="content_text"><a href="ImprovingCustomersExperience.html#//apple_ref/doc/uid/TP40011225-CH27-SW1" data-renderer-version="1">Improving Your Customersâ€™ Experience</a></span>, <span class="content_text"><a href="../ViewingAnalytics/ViewingAnalytics.html#//apple_ref/doc/uid/TP40011225-CH39-SW1" data-renderer-version="1">Viewing App Analytics</a></span>, <span class="content_text"><a href="ViewingSalesandTrendInformation.html#//apple_ref/doc/uid/TP40011225-CH20-SW1" data-renderer-version="1">Viewing Sales and Trends</a></span>, <span class="content_text"><a href="ViewingPaymentsandFinancials.html#//apple_ref/doc/uid/TP40011225-CH22-SW1" data-renderer-version="1">Viewing Payments and Financial Reports</a></span>, <span class="content_text"><a href="WorkingWithCatalogReports.html#//apple_ref/doc/uid/TP40011225-CH24-SW1" data-renderer-version="1">Working with Catalog Reports</a></span>
+</p><p>
+</p></aside></div>
+<p>After apps are live, you can manage store text and images. When you update an existing app, youâ€™ll add the new version to the same iTunes Connect record for the app. If needed, you can remove an app from the store or transfer it to another organization.</p>
+<div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40011225-CH1-SW8" title="Related Chapters"></a>
+<p><strong>Related Chapters:</strong>&nbsp;
+
+<span class="content_text"><a href="ChangingAppMetadata.html#//apple_ref/doc/uid/TP40011225-CH3-SW1" data-renderer-version="1">Viewing and Changing Your Appâ€™s Metadata</a></span>,
+<span class="content_text"><a href="ChangingAppStatus.html#//apple_ref/doc/uid/TP40011225-CH30-SW1" data-renderer-version="1">Viewing and Changing Your Appâ€™s Status and Availability</a></span>,
+<span class="content_text"><a href="ReplacingYourAppWithANewVersion.html#//apple_ref/doc/uid/TP40011225-CH14-SW1" data-renderer-version="1">Replacing Your App with a New Version</a></span>,
+<span class="content_text"><a href="TransferringAndDeletingApps.html#//apple_ref/doc/uid/TP40011225-CH31-SW1" data-renderer-version="1">Transferring and Deleting Apps</a></span>
+</p><p>
+</p></aside></div>
+</section>
+
+<a name="//apple_ref/doc/uid/TP40011225-CH1-DontLinkElementID_3" title="How to Use This Document"></a><h2 class="jump">How to Use This Document</h2>
+<p>Use this document to understand how to use iTunes Connect before, during, and after uploading and submitting an app for distribution through the App Store or Mac App Store.</p>
+
+<div id="introSeeAlsoSection"><a name="//apple_ref/doc/uid/TP40011225-CH1-DontLinkElementID_4" title="See Also"></a><h2 class="jump">See Also</h2>
+<p>
+<em><a href="../../../../IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582" data-renderer-version="1" target="_self">App Distribution Guide</a></em> explains how to develop, test, package, upload, and release your iOS and Mac apps, including preparing information to include in the iTunes Connect record for the app. If you are responsible for uploading an app to iTunes Connect, make sure to read the <em>App Distribution Guide</em> before you start with iTunes Connect.</p>
+<p>
+<span class="content_text"><a href="https://developer.apple.com/app-store/review/" class="urlLink" rel="external">App Review</a></span> describes guidelines developers need to follow when creating apps they plan to submit to the App Store or Mac App Store.</p>
+<p>If you are planning to distribute an app that uses a store technology, you may need to refer to one of the following configuration guides that augment this developer guide:</p>
+<ul class="ul">
+<li class="li">
+<p>
+<em><a href="../../iTunesConnectGameCenter_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013726" data-renderer-version="1" target="_self">Game Center Configuration Guide for iTunes Connect</a></em> contains details for setting up leaderboards, achievements, game groups, and multiplayer compatibility options for apps that use Game Center.</p>
+</li>
+<li class="li">
+<p>
+<em><a href="../../iTunesConnectInAppPurchase_Guide/Chapters/Introduction.html#//apple_ref/doc/uid/TP40013727" data-renderer-version="1" target="_self">In-App Purchase Configuration Guide for iTunes Connect</a></em> contains details for setting up products that are sold through a store in the app.</p>
+</li>
+</ul>
+<p>In addition, the <span class="content_text"><a href="http://help.apple.com/itc/appsspec/" class="urlLink" rel="external">App Metadata Specification</a></span> and the <span class="content_text"><a href="https://help.apple.com/itc/transporteruserguide/#/apdAc0cd2f8b" class="urlLink" rel="external">Transporter User Guide</a></span>  describe how to deliver app configuration metadata in batches in an App Store or Mac App Store package using Transporter. This is particularly helpful when you have many In-App Purchase products to configure for an app. These documents are available to iTunes Connect users â€¦in the Resources and Help section under App Preparation and Delivery.</p>
+<p>Throughout this document, look for links to additional documents on more specific topics.</p>
+</div>
+
+
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='OverviewofiTunesConnect.html'>Next</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2016 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2016-07-07</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="leave_feedback" class="button" role="button" tabindex="0">Feedback</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+    
+    <script charset="utf-8" src="../../../../../Resources/1197/JavaScript/lib/prototype.js"></script>
+    <script src="../../../../../Resources/1197/JavaScript/library.js"></script>
+    <script src="../../../../../Resources/1197/JavaScript/feedback.js"></script>
+</body>
+</html>
+
